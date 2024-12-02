@@ -1,0 +1,391 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: url(data:image/png;base64,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),
+    default !important;
+  background: #686868;
+
+  background: linear-gradient(10deg, #686868, #ffffff);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.chat-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: auto;
+  background: linear-gradient(90deg, #ffffff, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: #ffffff38; */
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+  letter-spacing: 3px;
+  margin: 20px 0;
+  text-align: center;
+  /* animation: glow 2s infinite;  */
+}
+
+.chat-app {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.chat-header {
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  top: -26px;
+}
+
+.messages-container {
+  padding: 20px;
+  height: 400px;
+  overflow-y: scroll;
+  background-color: #f7f9fc;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 75%;
+  line-height: 1.4;
+}
+
+.message.sender {
+  background-color: #e1ffc7;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.message.receiver {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  align-self: flex-start;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  background-color: #f0f2f5;
+  border-top: 1px solid #ddd;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-container button {
+  margin-left: 10px;
+  background-color: #0084ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.input-container button:hover {
+  background-color: #006bbd;
+}
+
+/* ======================== */
+/* Chat App Container */
+.app {
+  padding: 0px 10px;
+}
+
+.chat-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #eaeef3;
+}
+
+/* Header */
+.chat-header {
+  /* background-color: #128c7e; */
+  background-color: #000;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Controls Section */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+/* Input Fields */
+.input-field {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn:focus {
+  background-color: rgb(0, 0, 0);
+  /* color: black; */
+}
+
+.create-btn {
+  background-color: #34a853;
+}
+
+.join-btn {
+  background-color: #4285f4;
+}
+
+.leave-btn {
+  background-color: #ea4335;
+}
+
+.send-btn {
+  background-color: #128c7e;
+  /* background-color: #000000; */
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Messages Section */
+.messages-section {
+  width: 90%;
+  max-width: 400px;
+}
+
+.messages {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.message {
+  background: #f1f0f0;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.message span {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  letter-spacing: 1.1px;
+  line-height: 1.6;
+  font-weight: 600;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Send Message Section */
+.send-message {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+/* //--------------------login section-------------------- */ /* General Page Styling */
+/* Login Section */
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(10deg, #eaeef3, #ffffff);
+  /* background-color: white; */
+}
+
+/* Login Card */
+.login-page {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Heading Styling */
+.login-form h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  align-items: center;
+}
+
+/* Input Fields */
+.input-field-login {
+  width: 92%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-field-login:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+  outline: none;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sign-Up Prompt */
+.signup-prompt {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.signup-prompt a {
+  color: #4facfe;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-prompt a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -----------------------sign up section -----------------------*/
+.signup-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background: linear-gradient(10deg, #eaeef3, #ffffff);
+  /* background: white; */
+  /* background: linear-gradient(135deg, #4facfe, #00f2fe); */
+
+  /* background: linear-gradient(10deg, #00f2fe, #ffffff); */
+}
+
+.signup-page {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.signup-form h1 {
+  margin-bottom: 20px;
+}
+
+.input-field-signup {
+  width: 92%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.signup-btn,
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup-btn {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+}
+
+.google-btn {
+  background: #db4437;
+  color: white;
+}
+
+.signup-btn:hover,
+.google-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
